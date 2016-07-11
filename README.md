@@ -125,19 +125,6 @@ e26a26efd57a        dockerfile:nginx    "/run.sh"           30 minutes ago      
 9f89bcb18703        dockerfile:apache   "/run.sh"           43 minutes ago      Up 43 minutes       0.0.0.0:11023->22/tcp, 0.0.0.0:11080->80/tcp     apache
 98b4d5593325        dockerfile:ssh      "/run.sh"           About an hour ago   Up About an hour    0.0.0.0:11022->22/tcp                            ssh
 # mysql -uadmin -h127.0.0.1 -P13306 -pasdasd
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 1
-Server version: 5.1.73 Source distribution
-
-Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql>
 ```
 
 >MySQL主从
@@ -154,18 +141,6 @@ e26a26efd57a        dockerfile:nginx    "/run.sh"           35 minutes ago      
 98b4d5593325        dockerfile:ssh      "/run.sh"           About an hour ago    Up About an hour    0.0.0.0:11022->22/tcp                            ssh
 
 # mysql -uadmin -h127.0.0.1 -P13308 -pasdasd
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 3
-Server version: 5.1.73-log Source distribution
-
-Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
 mysql> show slave status\G
 *************************** 1. row ***************************
                Slave_IO_State: Waiting for master to send event
