@@ -113,6 +113,7 @@ Warning: Permanently added '[localhost]:11024' (RSA) to the list of known hosts.
 # cd MySQL
 # touch Dockerfile run.sh
 ```
+
 >构建并运行 MySQL 镜像
 ```bash
 # docker build -t dockerfile:mysql .
@@ -138,8 +139,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 mysql>
 ```
+
 >MySQL主从
-```bash
+```
 # docker run --name mysql -d -e REPLICATION_MASTER=true -e MYSQL_PASS="asdasd" -p 11026:22 -p 13307:3306 dockerfile:mysql
 # docker run --name slave -d -e REPLICATION_SLAVE=true -e MYSQL_PASS="asdasd" -p 11027:22 -p 13308:3306 --link mysql:mysql dockerfile:mysql
 # docker ps
