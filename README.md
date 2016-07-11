@@ -139,7 +139,6 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 e26a26efd57a        dockerfile:nginx    "/run.sh"           35 minutes ago       Up 35 minutes       0.0.0.0:11024->22/tcp, 0.0.0.0:11081->80/tcp     nginx
 9f89bcb18703        dockerfile:apache   "/run.sh"           48 minutes ago       Up 48 minutes       0.0.0.0:11023->22/tcp, 0.0.0.0:11080->80/tcp     apache
 98b4d5593325        dockerfile:ssh      "/run.sh"           About an hour ago    Up About an hour    0.0.0.0:11022->22/tcp                            ssh
-
 # mysql -uadmin -h127.0.0.1 -P13308 -pasdasd
 mysql> show slave status\\G
 
